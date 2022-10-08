@@ -1,0 +1,37 @@
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.innerContainer {
+    width: 650px;
+    height: 450px;
+    background: black;
+    position: relative;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+    .x {
+        font-weight: 1000;
+        cursor: pointer;
+        transition: opacity 0.1s linear;
+        font-size: 20px;
+        margin-bottom: 50px;
+        align-self: flex-start;
+
+        &:hover {
+            opacity: 0.75;
+        }
+    }
+}
