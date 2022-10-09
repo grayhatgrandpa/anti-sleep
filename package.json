@@ -5,7 +5,7 @@
     "scripts": {
         "dev": "next dev",
         "build": "next build",
-        "start": "next build && next start",
+        "start": "yarn prisma generate && yarn prisma db push && next build && next start",
         "lint": "next lint"
     },
     "dependencies": {
