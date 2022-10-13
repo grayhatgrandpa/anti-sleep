@@ -5,7 +5,7 @@
     "scripts": {
         "dev": "next dev",
         "build": "next build",
-        "start": "concurrently \"next start -p $PORT\" \"\"node index.js",
+        "start": "concurrently \"next start -p $PORT\" \"\"node index.mjs",
         "lint": "next lint"
     },
     "dependencies": {
