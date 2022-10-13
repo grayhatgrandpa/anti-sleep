@@ -10,7 +10,13 @@ const main = async () => {
 
     await Promise.all(
         json.map(async url => {
-            if (urlExists(url)) return await fetch(url)
+            if (urlExists(url))
+                return new Promise(resolve => {
+                    fetch(url).then(() => {
+                        console.log('fetch')
+                        resolve()
+                    })
+                })
         })
     )
 
